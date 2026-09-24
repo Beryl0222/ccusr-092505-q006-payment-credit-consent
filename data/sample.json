@@ -1,0 +1,9 @@
+{
+  "event_id": "092505-006-sample-001",
+  "event_type": "OFFER_SHOWN",
+  "aggregate_type": "payment_order",
+  "aggregate_id": "payment_credit_consent-001",
+  "occurred_at": "2026-09-24T12:00:00+08:00",
+  "version": 1,
+  "summary": "已登记一条可供联调的领域事实"
+}

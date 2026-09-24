@@ -1,0 +1,5 @@
+[project]
+name = "payment-credit-consent"
+version = "0.1.0"
+description = "支付与信贷同意账本领域契约"
+requires-python = ">=3.11"
