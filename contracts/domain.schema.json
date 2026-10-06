@@ -19,11 +19,23 @@
     "event_type": {
       "type": "string",
       "enum": [
+        "ORDER_OPENED",
         "OFFER_SHOWN",
+        "OFFER_UPDATED",
         "SUITABILITY_REVIEWED",
+        "MANUAL_REVIEW_QUEUED",
+        "MANUAL_REVIEW_RESOLVED",
+        "ITEM_CONFIRMED",
         "PAYMENT_CONFIRMED",
         "CREDIT_ACCEPTED",
-        "CONSENT_REVOKED"
+        "CREDIT_DECLINED",
+        "CONTRACT_ISSUED",
+        "CONSENT_REVOKED",
+        "EARLY_SETTLED",
+        "STATEMENT_GENERATED",
+        "DISPUTE_OPENED",
+        "DISPUTE_STAGE_ADVANCED",
+        "DISPUTE_RESOLVED"
       ]
     },
     "aggregate_type": {
@@ -32,6 +44,8 @@
         "payment_order",
         "credit_offer",
         "consent_record",
+        "suitability_assessment",
+        "credit_contract",
         "dispute_case"
       ]
     },
@@ -50,6 +64,13 @@
     "summary": {
       "type": "string",
       "minLength": 1
+    },
+    "command_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "facts": {
+      "type": "object"
     }
   },
   "additionalProperties": true
