@@ -19,11 +19,19 @@
     "event_type": {
       "type": "string",
       "enum": [
+        "ORDER_CREATED",
         "OFFER_SHOWN",
+        "OFFER_SUPERSEDED",
         "SUITABILITY_REVIEWED",
+        "MANUAL_REVIEW_RESOLVED",
+        "CONSENT_GIVEN",
         "PAYMENT_CONFIRMED",
         "CREDIT_ACCEPTED",
-        "CONSENT_REVOKED"
+        "CREDIT_REJECTED",
+        "CONSENT_REVOKED",
+        "EARLY_SETTLED",
+        "DISPUTE_OPENED",
+        "DISPUTE_ADVANCED"
       ]
     },
     "aggregate_type": {
